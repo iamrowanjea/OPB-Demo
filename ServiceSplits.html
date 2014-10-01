@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="css/opb.css" media="screen" type="text/css" rel="stylesheet">
+    <link href="css/print.css" media="print" type="text/css" rel="stylesheet">
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="js/opb.js" type="text/javascript">
+    <link href="js/main.js" type="text/javascript">
+    <title></title>
+    <script>
+    function addPlan() {
+    var plan = prompt("Please enter the name of the Plan", "");
+    var planCode = prompt("Please enter the code reference for the Plan", "");
+
+    if (plan != null) {
+    document.getElementById("plan").innerHTML =
+    "You have added " + plan + " as a new Plan";
+    }
+    }
+
+    function addClass() {
+    var memberClass = prompt("Please enter the name of the Class", "");
+    var classCode = prompt("Please enter the code reference for the Class", "");
+
+    if (memberClass != null) {
+    document.getElementById("class").innerHTML =
+    "You have added " + memberClass + " as a new Class";
+    }
+    }
+    </script>
+</head>
+<body>
+<div class="wlp-bighorn-header"></div>
+<a name="top"></a>
+
+<div class="topContainer">
+    <div class="topBar">
+        <div class="logo"><img src="images/OPB_Logo.gif" border="0" alt="Ontario Pension Board"/></div>
+        <div class="navigationContainer" >
+            <div class="upperMastHeadNav">
+                <!--Home and Contact us links -->
+                Home |
+                Contact us |
+                Pour nous joindre |
+                Login
+            </div>
+            <div class="lowerMastHeadNav">
+                <script>
+                    var nodePath = "";
+                    nodePath = nodePath.replace('&lt', '');
+                    var pageLabel = 'Members';
+                    var requestURI = '/portal/opb.portal';
+                </script>
+                <div class="topNav">About OPB | Members| Pensioners | Employers | Investments | Governance</div>
+
+                <!-- Login and Logout links -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mainContainer">
+    <div id="ServiceSplits" class="wlp-bighorn-page">
+        <div class="wlp-bighorn-layout wlp-bighorn-layout-flow">
+
+            <div class="centerContainer">
+                <div class="centerBanner">
+                    <div class="centerBannerImage">
+                        <script language="javascript"> showRightImage(); </script>
+                        <img src="images/NewJeaLogo.png" alt=""></div>
+                    <div class="centerBannerHeaders">
+                        <h1>Service Splits</h1>
+
+                        <p><h4>Ontario Pension Board rules for Service Splits</h4></p></div>
+                </div>
+
+
+
+            <div class = "contentContainer" style="overflow: hidden">
+
+                <div class="dropdowns" style="'border:2px black solid; display:inline">
+                    <br>
+                    <p class="outline">
+                        Plan      <select><option value="PSPP">PSPP</option><option value="SHPP">SHPP</option></select>          <button type="button" class="add" onclick="addPlan()"><img src="images/add.png"></button><output id="plan"></output>
+                    </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="dropdowns" style="'border:2px black solid; display:inline">
+                        <br>
+                        <p class="outline">
+                            Class      <select><option value="Civilian">OPPCivilian</option><option value="Manager">OPPManager</option></select>        <button type="button" class="add" onclick="addClass()"><img src="images/add.png"></button><output id="class"></output>
+                        </p>
+                   </div>
+                    <br>
+                    <br>
+                    <br>
+                <div class="functionalContent">
+                    <button type="button "  class="button-add">Add</button><button type="button" class="button-edit">Edit</button><button type="button" class="button-delete">Delete</button><button type="button" class="button-copy">Copy</button><button type="button" class="button-audit">Audit</button>
+                </div>
+                <script>
+
+                </script>
+                <br>
+                <br>
+                <div class="centerAlignment">
+
+                <table class="jeaTable">
+                    <thead>
+                    <tr >
+                        <th>Jurisdiction</th>
+                        <th>Terminations Commencing Date</th>
+                        <th>Effective Date</th>
+                        <th>Calculation Type</th>
+                        <th>Service Type</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>CA</td>
+                        <td>00-01-01</td>
+                        <td>66-01-01</td>
+                        <td>Pension</td>
+                        <td>PayNow</td>
+                    </tr>
+                    <tr>
+                        <td>CA</td>
+                        <td>00-01-01</td>
+                        <td>87-01-01</td>
+                        <td>Pension</td>
+                        <td>PayNow</td>
+                    </tr>
+                    <tr>
+                        <td>CA</td>
+                        <td>00-01-01</td>
+                        <td>90-01-01</td>
+                        <td>Pension</td>
+                        <td>PayNow</td>
+                    </tr>
+                    <tr>
+                        <td>CA</td>
+                        <td>00-01-01</td>
+                        <td>92-01-01</td>
+                        <td>Pension</td>
+                        <td>PayNow</td>
+                    </tr>
+                    <tr>
+                        <td>CA</td>
+                        <td>00-01-01</td>
+                        <td>00-01-01</td>
+                        <td>Pension</td>
+                        <td>LTIP</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            </div>
+        </div>
+            <div class="rightContainer"><div></div><div id="SearchController_1_1_2" class="wlp-bighorn-window  "><div class="wlp-bighorn-window-content">
+                <div class="rightBanner"><script language="JavaScript">showImage();</script></div>
+
+
+
+                <div class="rightNavigation">
+                    <div class="printThisPage">
+                        <div style="float:left">
+                            <div style="float:left;padding:4px 3px 0px 0px;"><a style="text-decoration:none;" href=""
+                                                                                onclick="window.print();return false;">Print page</a></div>
+                            <div style="float:left;padding:0px 0px 0px 0px;"><a href="" onclick="window.print();return false;"><img
+                                    src="images/printIcon.gif" width="18" height="20" /></a></div>
+                        </div>
+                        <br class="clearfloat" />
+                    </div>
+
+                    <div class="searchForm"><form action="http://www.opb.ca:80/portal/opb.portal?_nfpb=true&amp;_windowLabel=SearchController_1_1_2&amp;SearchController_1_1_2_actionOverride=%2Fca%2Fopb%2Fportal%2Fpageflow%2Fsearch%2Fsearch" method="post">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><input type="text" name="SearchController_1_1_2{actionForm.keyWord}" id="actionForm_keyWord" class="rightContainerSearch" maxlength="100">
+
+                                </td>
+                                <td><input type="submit" class="searchButton" value="Search"></td>
+                            </tr>
+                        </table>
+
+
+                        <table border="0" cellspacing="0" cellpadding="1">
+                            <tr>
+                                <td><input type="radio" name="SearchController_1_1_2wlw-radio_button_group_key:{actionForm.wholeSiteSearch}" value="N" checked><span>Employers</span></td>
+                                <td><input type="radio" name="SearchController_1_1_2wlw-radio_button_group_key:{actionForm.wholeSiteSearch}" value="Y"><span>Site</span></td>
+                            </tr>
+                        </table>
+
+
+                    </form></div>
+                    <div><br/></div>
+                    <UL class="rightNav">
+                        <LI>
+                            <a class="l1InActive" id="/OPBPublicRepository/OPB/Public/Common/SpecialFeatures/en/WhatsNew" onclick="showContent(this)" href="#">What's new</a>
+                        </LI>
+                        <LI>
+                            <a class="l1InActive" onclick="gotoEAlert()"  href="#">Sign up for e-alert</a>
+                        </LI>
+                        <LI>
+                            <a class="l1InActive" id="/OPBEmployersRepository/OPB/Employers/SpecialFeatures/en/Employers Forms" onclick="showContent(this)" href="#">Forms</a>
+                        </LI>
+                        <LI>
+                            <a class="l1InActive" id="/OPBPublicRepository/OPB/Public/Common/SpecialFeatures/en/Glossary" onclick="showContent(this)" href="#">Glossary</a>
+                        </LI>
+                        <LI>
+                            <a class="l1InActive" id="/OPBPublicRepository/OPB/Public/Common/SpecialFeatures/en/OPB Publications" onclick="showContent(this)" href="#">Publications</a>
+                        </LI>
+                        <LI>
+                            <a class="l1InActive" id="/OPBEmployersRepository/OPB/Employers/SpecialFeatures/en/Employers Information Sessions" onclick="showContent(this)" href="#">Info sessions</a>
+                        </LI>
+                        <LI>
+                            <a class="l1InActive" id="/OPBPublicRepository/OPB/Public/Common/SpecialFeatures/en/Access to Great West Life" onclick="showContent(this)" href="#">Great West Life</a>
+                        </LI>
+                        <LI>
+                            <a class="l1InActive" id="/OPBPublicRepository/OPB/Public/Common/SpecialFeatures/en/Accessibility" onclick="showContent(this)" href="#">Accessibility</a>
+                        </LI>
+                    </UL>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
