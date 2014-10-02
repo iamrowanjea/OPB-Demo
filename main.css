@@ -1,0 +1,179 @@
+.dropdowns{
+    display:inline;
+    padding:50px;
+    margin-left:1000px;
+    border-color: #C8C8C8;
+}
+
+.jeaFont
+{
+    color: #2e4669;
+}
+.jeaTable {
+    background: #FFFFFF;
+    border-color: #C8C8C8;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    margin: 10px 0px;
+    border-collapse: collapse;
+}
+
+.topNav{
+    background-color: #7B923A;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 2px 14px;
+    text-decoration: none;
+    border-top: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+
+.navigationContainer {
+    background-image:url("../images/navBgTile.png");
+}
+
+.jeaTable td {
+    vertical-align: top;
+    border-color: #C8C8C8;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    margin: 0;
+    padding: 5px;
+    border-spacing: 10px;
+}
+.jeaTable th {
+    text-align:left;
+    line-height:13px;
+    vertical-align:top;
+    color:#013B69;
+    background:#DBE0E8;
+    border-color: #C8C8C8;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    margin: 0;
+    padding: 4px;
+}
+
+.functionalContent{
+    display:inline;
+    float:right;
+    margin-left:auto;
+    margin-right:15%;
+}
+
+.horizontalAlign{
+    display:inline;
+}
+
+input { margin: 0;}
+
+.centerAlignment{
+    margin-left:16%;
+    margin-right:auto;
+    align-content: center;
+}
+
+button.addPlan{
+    background-image: url("../images/add.png");
+    background-color:#E1EEF9; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border-color: black;
+    border-width: 1px 1px 1px 1px;
+    padding-left: 24px;
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 20px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+
+button.button-add {
+    background-image: url("../images/add.png"); /* 16px x 16px */
+    background-color:#E1EEF9; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border-color: black;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 24px;           /* make this the size of your image */
+    padding-left: 24px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+button.button-copy {
+    background-image: url("../images/copy.png"); /* 16px x 16px */
+    background-color: #E1EEF9; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border-color: black;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 24px;           /* make this the size of your image */
+    padding-left: 24px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+button.button-delete {
+    background-image: url("../images/delete.png"); /* 16px x 16px */
+    background-color: #E1EEF9; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border-color: black;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 24px;           /* make this the size of your image */
+    padding-left: 24px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+
+button.button-edit {
+    background-image: url("../images/edit.png"); /* 16px x 16px */
+    background-color: #E1EEF9; /* make the button transparent */
+    background-repeat: no-repeat; /* make the background image appear only once */
+    background-position: 0px 0px; /* equivalent to 'top left' */
+    border-color: black;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer; /* make the cursor like hovering over an <a> element */
+    height: 24px; /* make this the size of your image */
+    padding-left: 24px; /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+
+button.button-audit {
+    background-image: url("../images/audit.png"); /* 16px x 16px */
+    background-color:#E1EEF9; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border-color: black;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 24px;           /* make this the size of your image */
+    padding-left: 24px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+
+.jeaBorder1{
+    border: 1px;
+    border-style:solid;
+    border-color: black;
+    padding-left: 24px;
+    display:inline;
+    overflow: hidden;
+    float: left;
+}
+
+fieldset{
+    overflow: hidden;
+    float: left;
+    background-color: #eee;
+}
+
+fieldset.explicit-width{
+    width:1%;
+}
+
+.outline{
+    outline: #001200 solid thin;
+    padding:5px;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
